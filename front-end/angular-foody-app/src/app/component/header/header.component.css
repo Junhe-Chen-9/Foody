@@ -6,6 +6,9 @@
     grid-template-columns: 2fr 1fr;
     grid-template-rows: 1fr;
     margin-bottom: 20px;
+    border-style: solid;
+    border-color: var(--color-black);
+    border-width: 2px;
 }
 .navbar__container{
     grid-column-start: 2;

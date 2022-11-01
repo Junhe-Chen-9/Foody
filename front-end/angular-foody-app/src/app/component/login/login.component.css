@@ -1,7 +1,13 @@
 .login__container{
-    width: auto;
+    width: 97%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    border-style: solid;
+    border-color: var(--color-black);
+    border-width: 2px;
+    margin-left: 20px;
+    background-color: var(--color-white);
+
 }
 
 
