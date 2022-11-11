@@ -3,8 +3,14 @@
 /* imports */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;900&display=swap');
-
-
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 *{
     /* style resets*/
     margin:0;
@@ -23,7 +29,7 @@
     /* colors */
     --color-bg: #fa8e00;
     --color-bg-variant: #2a9d8f;
-    --color-primary: #7a7a7ae5;
+    --color-primary: rgb(255, 128, 0);
     --color-primary-variant: #f4a261;
     --color-primary-variant2: #FBB040;
     --color-btn: #FDBE15;
@@ -35,8 +41,10 @@
 
     /* container */
     --container-width-lg: 100%;
-    --container-width-md: 100%;
-    --container-width-sm: 100%;
+    /*
+    --container-width-md: 86%;
+    --container-width-sm: 76%;
+    */
 
     /* transition */
     --transition-400: all 400ms ease;
@@ -46,12 +54,14 @@
     --fonts-logo: 'Roboto', sans-serif;
     --fonts-black: 900;
     --fonts-regular: 400;
-    --fonts-hero: 'Bebas Neue', cursive;
+    --fonts-hero: 'Roboto', sans-serif;
 }
 
 html{
     /* scrolling animation */
     scroll-behavior: smooth;
+    margin: 0px !important;
+    padding : 0px !important;
 }
 
 /* don't like the scrollbar on windows so might as well disable for good */
@@ -67,17 +77,12 @@ body{
     font-family: 'Poppins', sans-serif;
     color: var(--color-black);
     line-height: 1.7;
+
     /* background */
-    
     /*
     background-color: var(--color-bg);
     background-image: url(./assets/diagmonds-light.png);
     */
-    
-    background: radial-gradient(at bottom right, #ffb600 0, #ffb600 25px, rgba(255,182,0,0.2) 25px, rgba(255,182,0,0.2) 50px, rgba(255,182,0,0.75) 50px, rgba(255,182,0,0.75) 75px, rgba(255,182,0,0.25) 75px, rgba(255,182,0,0.25) 100px, rgba(255,182,0,0.3) 100px, rgba(255,182,0,0.3) 125px, rgba(255,182,0,0.75) 125px, rgba(255,182,0,0.75) 150px, rgba(255,182,0,0.2) 150px, rgba(255,182,0,0.2) 175px, transparent 175px, transparent 200px), radial-gradient(at top left, transparent 0, transparent 25px, rgba(255,182,0,0.2) 25px, rgba(255,182,0,0.2) 50px, rgba(255,182,0,0.75) 50px, rgba(255,182,0,0.75) 75px, rgba(255,182,0,0.3) 75px, rgba(255,182,0,0.3) 100px, rgba(255,182,0,0.25) 100px, rgba(255,182,0,0.25) 125px, rgba(255,182,0,0.75) 125px, rgba(255,182,0,0.75) 150px, rgba(255,182,0,0.2) 150px, rgba(255,182,0,0.2) 175px, #ffb600 175px, #ffb600 200px, transparent 200px, transparent 500px);
-    background-blend-mode: multiply;
-    background-size: 200px 200px, 200px 200px;
-    background-color: rgba(246, 217, 34, 0.83);
     
 }
 
@@ -123,20 +128,10 @@ a:hover{
 
 /* MD DEVICES */
 @media screen and (max-width:1024px) {
-    .container{
-        width: var(--container-width-md);
-    }
-    section{
-        margin-top: 6rem;
-    }
+    
 }
 
 /* SM DEVICES */
 @media screen and (max-width:600px) {
-    .container{
-        width: var(--container-width-sm);
-    }
-    section > h2{
-        margin-bottom: 2rem;
-    }
+   
 }
