@@ -18,6 +18,11 @@
                     </li>
                 </ul>
             </nav>
+            <nav class="mobile__nav">
+                <a href="#" class="menuButton" title="Open mobile navigation">
+                    <svg class="menu-svg" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
+                </a>
+            </nav>
             <nav class="aboutheader__ctaNav">
                 <a *ngIf="signin" routerLink="/account" class="aboutheader__btn">Dashboard &#11088;</a>
                 <a *ngIf="!signin" routerLink="/login" class="aboutheader__btn">Sign in &#11088;</a>
@@ -43,8 +48,8 @@
 
         <section class="hero-text about__section">
             <div class="container title__container about__title">
-                <h6 class="social__title">What we do</h6>
-                <h1 class="social__title">Help you decide where to eat</h1>
+                <h6 class="hero-text__title">What we do</h6>
+                <h1 class="hero-text__title">Help you decide where to eat</h1>
             </div>
             <div class="container paragraph__container">
                 <p>Have you ever spent hours with your friends trying to decide where to eat?</p>
@@ -57,7 +62,7 @@
         </section>
         
         <section class="container social__container about__section">
-            <div class="social__title about__title" >
+            <div class="social__title__container about__title" >
                 <h6 class="social__title">Social Medias</h6>
                 <h1 class="social__title">Leave a like to support us at</h1>
             </div>

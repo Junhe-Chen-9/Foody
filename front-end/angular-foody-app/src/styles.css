@@ -41,10 +41,8 @@ html,body
 
     /* container */
     --container-width-lg: 100%;
-    /*
     --container-width-md: 86%;
-    --container-width-sm: 76%;
-    */
+    --container-width-sm: 90%;
 
     /* transition */
     --transition-400: all 400ms ease;
