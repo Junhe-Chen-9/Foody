@@ -425,6 +425,7 @@ svg{
     .problem__text__container{
         grid-column-start: 1;
         grid-column-end: 2;
+        padding-right: 40%;
     }
     .questionmark__container{
         display: none;
@@ -471,6 +472,7 @@ svg{
         border-radius: 16px;
     }
 
+    
     .resources__container{
         grid-template-columns: 1fr;
     }
@@ -484,5 +486,80 @@ svg{
         margin-left: 13%;
         margin-top: -8%;
     }
+    .mobile__nav__modal{
+        border-color: #f6f9fb;
+        border-width: 2px;
+        border-style: solid;
+        z-index: 2;
+        display: grid;
+        background-color: var(--color-white);
+        width: 90%;
+        height: 82%;
+        position: absolute;
+        top: 2%;
+        left: 5%;
+        border-radius: 10px;
+        grid-template-rows: 68px 1fr 80px;
+    }
+    .logocontianer{
+        display: flex;
+        justify-content: space-between;
+        background-color: #f6f9fb;
+        height: 55px;
+        margin: 5px;
+        border-radius: 10px;
+    }
+    .logocontianer > h1{
+        font-family: var(--fonts-logo);
+        font-weight: var(--fonts-black);
+        font-size: 25px;
+        margin-left: 2%;
+        margin-top: 3%;
+        color: var(--color-primary);
+    }
+    .exit-btn__container{
+        margin-top: 2%;
+        padding-right: 2%;
+    }
+    .mobileaboutnavbtn__container{
+        border-radius: 10px;
+        background-color: #f6f9fb;
+        height: 60px;
+        margin: 5px;
+        
+    }
+    .mobile__nav__header-btn{
+        margin-top: 10px;
+        background-color: var(--color-primary);
+        margin-left: 42%;
+    }
+    .mobile__nav__header-btn:hover{
+        background-color: var(--color-primary-variant2);
+        filter: opacity(200%);
+    }
+    .mobile__nav__list{
+        display: flex;
+        flex-direction: column;
+        gap: 0%
+    }
+    .mobile_headernav__nav__item{
+        margin-top: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-bottom: #f6f9fb;
+        border-style: dashed;
+    
+    }
+    .headernav__nav__btn{
+        background-color: transparent;
+        font-size: 20px;
+        margin-left: 20px;
+        font-weight: 500;
+        margin-top: 10px;
+    }
+    .headernav__nav__btn:hover{
+        color: #ababab;
+    }
+    
 
 }

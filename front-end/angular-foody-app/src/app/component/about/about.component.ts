@@ -8,6 +8,7 @@ import { Userprofile } from 'src/app/common/userprofile';
 })
 export class AboutComponent implements OnInit {
   signin:Boolean = false;
+  show:Boolean = false;
   constructor() { }
 
   ngOnInit(): void {
@@ -18,5 +19,10 @@ export class AboutComponent implements OnInit {
       this.signin = true;
     }
   }
-
+  opennav(){
+    this.show = true;
+  }
+  close(){
+    this.show = false;
+  }
 }

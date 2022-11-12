@@ -19,7 +19,7 @@
                 </ul>
             </nav>
             <nav class="mobile__nav">
-                <a href="#" class="menuButton" title="Open mobile navigation">
+                <a class="menuButton" title="Open mobile navigation" (click)="opennav()">
                     <svg class="menu-svg" clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m22 16.75c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75zm0-5c0-.414-.336-.75-.75-.75h-18.5c-.414 0-.75.336-.75.75s.336.75.75.75h18.5c.414 0 .75-.336.75-.75z" fill-rule="nonzero"/></svg>
                 </a>
             </nav>
@@ -43,6 +43,39 @@
         </div>
     </div>
     
+    <div class="mobile__nav__modal" *ngIf="show">
+
+        <div class="logocontianer">
+            <h1 class="mobile__about__logo">Foody</h1>
+            <div class="exit-btn__container">
+                
+                <svg (click)="close()" width="40" height="40" viewBox="0 0 40 40"><title>Close mobile navigation</title><path d="M25.6 14.3a1 1 0 0 1 0 1.4l-4.24 4.25 4.25 4.24a1 1 0 1 1-1.42 1.42l-4.24-4.25-4.24 4.25a1 1 0 0 1-1.42-1.42l4.25-4.24-4.25-4.24a1 1 0 0 1 1.42-1.42l4.24 4.25 4.24-4.25a1 1 0 0 1 1.42 0z" fill="#4F5B76" fill-rule="evenodd"></path></svg>
+            </div>
+        </div>
+        
+
+        <ul class="mobile__nav__list">
+
+            <li class="mobile_headernav__nav__item">
+                <button class="headernav__nav__btn">Solutions</button>
+            </li>
+
+            <li class="mobile_headernav__nav__item">
+                <button class="headernav__nav__btn">Problems</button>
+            </li>
+
+            <li class="mobile_headernav__nav__item">
+                <button class="headernav__nav__btn">Resources</button>
+            </li>
+
+        </ul>
+
+        <div class="mobileaboutnavbtn__container">
+            <a *ngIf="signin" routerLink="/account" class="aboutheader__btn mobile__nav__header-btn">Dashboard</a>
+            <a *ngIf="!signin" routerLink="/login" class="aboutheader__btn mobile__nav__header-btn">Sign in</a>
+        </div>
+       
+    </div>
 
     <div class="container about__content">
 
