@@ -535,8 +535,7 @@ svg{
         color: var(--color-primary);
     }
     .exit-btn__container{
-        margin-top: 2%;
-        padding-right: 2%;
+        width: 50px;
     }
     .mobileaboutnavbtn__container{
         display: flex;
