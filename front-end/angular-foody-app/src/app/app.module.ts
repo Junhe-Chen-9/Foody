@@ -9,7 +9,7 @@ import { HeaderComponent } from './component/header/header.component';
 import { AboutComponent } from './component/about/about.component';
 import { ContactComponent } from './component/contact/contact.component';
 import { LoginComponent } from './component/login/login.component';
-import { AuthService } from './service/auth.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RequestInterceptor } from './interceptor/request.interceptor';
 import { SignupComponent } from './component/signup/signup.component';
 import { AccountComponent } from './component/account/account.component';
@@ -31,7 +31,8 @@ import { AccountComponent } from './component/account/account.component';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
   ],
   providers: [ 
     {

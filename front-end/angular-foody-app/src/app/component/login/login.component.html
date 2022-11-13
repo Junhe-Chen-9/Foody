@@ -1,11 +1,11 @@
-<app-header></app-header>
-<div class = "cotainer login__container">
-	
-	<div class = "container hero__container">
-		<img class ="image hero__image" src="../../../assets/Foody-LogSign.png" alt="">
-	</div>
 
-	<div class="container form__container">
+<div class = "cotainer login__container">
+
+	<div class="container login-form__container">
+
+		<div class="container logo__container">
+			
+		</div>
 		<div class="alert alert-danger" [hidden]="!error">
 			There was a problem logging in. Please try again.
 		</div>
@@ -32,5 +32,8 @@
 			<button type="submit" class="btn btn-primary">Log In</button>
 			<button routerLink="/signup" class="btn">Sign up</button>
 		</form>
+
 	</div>
+
+
 </div>
