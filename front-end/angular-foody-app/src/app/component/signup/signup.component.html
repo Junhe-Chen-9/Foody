@@ -1,32 +1,52 @@
+<div class="container signupcontainer">
+    <div class = "stripcontainer">
+        <div class="skewcontainer">
+            <div class="stripbox1">
+            </div>
+            <div class="stripbox2">
+            </div>
+            <div class="stripbox3">
+            </div>
+            <div class="stripleft">
+            </div>
+            <div class="striptopright">
+            </div>
+            <div class="stripright">
+            </div>
+            <div class="stripsmall">
+            </div>
+        </div>
+    </div>
+    <div class="signupform">
 
-<div class="container signup__container">
-	
-	<div class="signup__form">
-		<h1>Sign Up</h1>
-		<form [formGroup]="registerFromGroup" (ngSubmit)="onSubmit()">
-			<input formControlName="firstName" type="text" placeholder="First name"/>
-			<br/>
-			<input formControlName="lastName" type="text" placeholder="Surname"/>
-			<br/>
-			<input formControlName="email" type="text" placeholder="Email address"/>
-			<br/>
-			<input formControlName="username" type="text" placeholder="New username"/>
-			<br/>
-			<input formControlName="password" type="text" placeholder="New password"/>
-			<br/>
-			<input formControlName="displayName" type="text" placeholder="New nametag"/>
+        <form [formGroup]="registerFromGroup" (ngSubmit)="onSubmit()">
+            <div class = "signupbox">
+            <h1 >Sign Up</h1>
+            <input formControlName="firstName" type="text" placeholder="First Name"/>
+            <br/>
+            <input formControlName="lastName" type="text" placeholder="Last Name"/>
+            <br/>
+            <input formControlName="email" type="text" placeholder="Email Address"/>
+            <br/>
+            <input formControlName="username" type="text" placeholder="New Username"/>
+            <br/>
+            <input formControlName="password" type="text" placeholder="New Password"/>
+            <br/>
+            <input formControlName="displayName" type="text" placeholder="New Nametag"/>
+            <br/>
+            <input formControlName="street" type="text" placeholder="Address"/>
+            <br/>
+            <input formControlName="city" type="text" placeholder="City"/>
+            <br/>
+            <input formControlName="state" type="text" placeholder="State"/>
+            <br/>
+            <input formControlName="zipCode" type="text" placeholder="Zip Code"/>
 
-			<h5>Getting to know you a little more</h5>
-			<input formControlName="street" type="text" placeholder="Address"/>
-			<input formControlName="city" type="text" placeholder="City"/>
-			<input formControlName="state" type="text" placeholder="State"/>
-			<input formControlName="zipCode" type="text" placeholder="Zip Code"/>
-			
-			
-			<div class="btn__container">
-				<button type="submit" class="btn btn-primary">Sign up</button>
-			</div>
 
-		</form>
-	</div>
-</div>
+            <div class="btn__container">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+        </form>
+    </div>
+</div> 

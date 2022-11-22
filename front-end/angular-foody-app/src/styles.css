@@ -31,12 +31,20 @@ html,body
     --color-bg-variant: #f6f9fb;;
     --color-primary: rgb(255, 128, 0);
     --color-primary-variant: #f4a261;
-    --color-primary-variant2: rgb(202, 101, 0);
+    --color-primary-variant: #f4a261;
+    --color-primary-variant2: #FBB040;
     --color-btn: #FDBE15;
     --color-hover: #FFDA00;
+    --color-blend: #F4431D;
+    --color-red: rgb(240, 12, 12);
     --color-white:#fff;
     --color-black:rgb(0, 0, 0);
     --color-light:rgba(255, 255, 255, 0.758);
+    --color-background: rgb(247, 250, 252);
+    --color-shadow: rgba(60, 66, 87, .08);
+    --color-shadow2:rgba(0, 0, 0, .12);
+    --color-inputbox:  rgb(133, 133, 133); 
+
     
 
     /* container */

@@ -55,5 +55,6 @@ export class SignupComponent implements OnInit {
     registerInstructions.lastNameInit = registerInstructions.lastName.charAt(0).toUpperCase().concat(".");
     registerInstructions.memberSince = new Date();
     this.registerService.register(registerInstructions);
+    
   }
 }

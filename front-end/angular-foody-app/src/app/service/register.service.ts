@@ -20,12 +20,16 @@ export class RegisterService {
       (res) =>{
         if(res){
           console.log(res);
+          
         }
+        
       },
       (error) =>{
         console.log(error);
+        
       }
 
     );
   }
+  
 }
