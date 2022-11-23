@@ -21,7 +21,7 @@ export class AuthService {password
         
         const usernamePassword = window.btoa(credentials.username + ':' + credentials.password);
         
-        this.http.post<any>('http://localhost:8080/api/v1/login', usernamePassword).subscribe(
+        this.http.post<any>('http://themillenniumfalcon.junhechen.com:8080/api/v1/login', usernamePassword).subscribe(
             (res) => {
             if(res) {
                 this.sessionId = res.sessionId;

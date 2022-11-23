@@ -9,7 +9,7 @@ import { InquiryInstruction } from '../common/inquiry-instruction';
 export class ContactService {
 
   // base url
-  private baseUrl ="http://localhost:8080/api/v1/"
+  private baseUrl ="http://themillenniumfalcon.junhechen.com:8080/api/v1/"
 
   constructor(private httpClient:HttpClient) { }
 

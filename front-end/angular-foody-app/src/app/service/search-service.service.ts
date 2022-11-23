@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class SearchServiceService {
   // base url
-  private baseUrl ="http://localhost:8080/api/v2/"
+  private baseUrl ="http://themillenniumfalcon.junhechen.com:8080/api/v2/"
   // type of api call 
   
 
