@@ -9,14 +9,14 @@ import { RegisterInstructions } from '../common/register-instructions';
 })
 export class RegisterService {
   // base url
-  private baseUrl ="http://themillenniumfalcon.junhechen.com:8080/api/v1/registration"
+  private baseUrl ="https://themillenniumfalcon.junhechen.com/api/v1/registration"
 
   constructor(private httpClient:HttpClient,private router:Router) { }
 
   register(registerInstructions:RegisterInstructions){
     // makesure there is no logged in user
     sessionStorage.clear();
-    this.httpClient.post<RegisterInstructions>('http://themillenniumfalcon.junhechen.com:8080/api/v1/registration',registerInstructions).subscribe(
+    this.httpClient.post<RegisterInstructions>('https://themillenniumfalcon.junhechen.com/api/v1/registration',registerInstructions).subscribe(
       (res) =>{
         if(res){
           console.log(res);
