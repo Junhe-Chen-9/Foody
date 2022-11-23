@@ -53,6 +53,21 @@ export class AuthService {password
 
         );
     }
+
+    logout(sessionId:String){
+        this.http.post<any>('https://themillenniumfalcon.junhechen.com/api/v1/logout',sessionId).subscribe(
+            (res) => {
+                if(res) {
+                    alert("see you again");
+                    console.log("signout sucessfully");
+                }
+            },
+            (error) =>{
+                // alert
+                console.log("we have encountered a issue");
+            }
+        );
+    }
 }
 
 

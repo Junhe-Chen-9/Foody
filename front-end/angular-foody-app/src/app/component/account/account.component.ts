@@ -17,8 +17,10 @@ export class AccountComponent implements OnInit {
     this.user = JSON.parse(sessionStorage.getItem("userDetails")) as Userprofile;
   }
   signout(){
+    this.auth.logout(sessionStorage.getItem("token"));
     sessionStorage.clear();
     // make api call to the backend to delete our session
+    
     this.router.navigateByUrl('/login');
   }
 
