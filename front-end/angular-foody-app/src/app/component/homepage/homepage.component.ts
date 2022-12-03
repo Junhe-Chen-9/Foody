@@ -37,5 +37,8 @@ export class HomepageComponent implements OnInit {
       }
     )
   }
+  getAddress(place: object) { 
+    
+  }
 
 }

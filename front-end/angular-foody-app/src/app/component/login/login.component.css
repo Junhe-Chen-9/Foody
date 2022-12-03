@@ -420,6 +420,13 @@
     } 
   } 
 
+.bi-house{
+    z-index: 1;
+    position: absolute;
+    top: 20%;
+    left: 30%
+    
+}
 /* MD DEVICES */
 @media screen and (max-width:1024px) {
     

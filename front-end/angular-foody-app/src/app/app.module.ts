@@ -13,6 +13,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RequestInterceptor } from './interceptor/request.interceptor';
 import { SignupComponent } from './component/signup/signup.component';
 import { AccountComponent } from './component/account/account.component';
+import { AutocompleteComponent } from './google-maps.component';
+import { ModalComponent } from './component/modal/modal.component';
 
 
 @NgModule({
@@ -25,6 +27,9 @@ import { AccountComponent } from './component/account/account.component';
     LoginComponent,
     SignupComponent,
     AccountComponent,
+    AutocompleteComponent,
+    ModalComponent,
+   
     
     
   ],
@@ -35,6 +40,7 @@ import { AccountComponent } from './component/account/account.component';
     ReactiveFormsModule,
     HttpClientModule,
     BrowserAnimationsModule,    
+    
   ],
   providers: [ 
     {
