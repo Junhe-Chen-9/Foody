@@ -14,6 +14,7 @@ import { RequestInterceptor } from './interceptor/request.interceptor';
 import { SignupComponent } from './component/signup/signup.component';
 import { AccountComponent } from './component/account/account.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,6 +26,7 @@ import { AccountComponent } from './component/account/account.component';
     SignupComponent,
     AccountComponent,
     
+    
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,7 @@ import { AccountComponent } from './component/account/account.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,
+    BrowserAnimationsModule,    
   ],
   providers: [ 
     {
