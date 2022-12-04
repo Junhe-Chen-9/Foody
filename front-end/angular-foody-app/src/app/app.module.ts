@@ -15,7 +15,7 @@ import { SignupComponent } from './component/signup/signup.component';
 import { AccountComponent } from './component/account/account.component';
 import { AutocompleteComponent } from './google-maps.component';
 import { ModalComponent } from './component/modal/modal.component';
-
+import {MatDialogModule} from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -29,6 +29,7 @@ import { ModalComponent } from './component/modal/modal.component';
     AccountComponent,
     AutocompleteComponent,
     ModalComponent,
+    
    
     
     
@@ -39,7 +40,8 @@ import { ModalComponent } from './component/modal/modal.component';
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
-    BrowserAnimationsModule,    
+    BrowserAnimationsModule,
+    MatDialogModule,    
     
   ],
   providers: [ 

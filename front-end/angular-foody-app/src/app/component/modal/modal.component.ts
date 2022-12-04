@@ -1,13 +1,18 @@
-import { Component, OnInit } from '@angular/core';
-import { MdbModalRef } from 'mdb-angular-ui-kit/modal';
-
+import { Component } from '@angular/core';
+import {MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog';
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.css']
 })
-export class ModalComponent{
+export class ModalComponent {
+  constructor(public dialogRef: MatDialogRef<ModalComponent>){
 
-  constructor(public modalRef: MdbModalRef<ModalComponent>) {}
+  }
+  closeDialog() {
+    this.dialogRef.close('Pizza!');
+  }
+  
+  
 
 }
