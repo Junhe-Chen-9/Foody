@@ -1,53 +1,56 @@
 <div class="container signup__container">
-	<div class = "strip__container">
-		<div class="skew__container">
-			<div class="strip__box1">
-			</div>
-			<div class="strip__box2">
-			</div>
-			<div class="strip__box3">
-			</div>
-			<div class="strip__left">
-			</div>
-			<div class="strip__topright">
-			</div>
-			<div class="strip__right">
-			</div>
-			<div class="strip__small">
-			</div>
-		</div>
-	</div>
-	<div class="signup__form">	
-		<form [formGroup]="registerFromGroup" (ngSubmit)="onSubmit()">
-			<div class = "signup__box">
-			<h1 >Sign Up</h1>
-			<input formControlName="firstName" type="text" placeholder="First Name"/>
-			<br/>
-			<input formControlName="lastName" type="text" placeholder="Last Name"/>
-			<br/>
-			<input formControlName="email" type="text" placeholder="Email Address"/>
-			<br/>
-			<input formControlName="username" type="text" placeholder="New Username"/>
-			<br/>
-			<input formControlName="password" id="password" name="password" type="password" placeholder="New Password"/>
-			<br/>
-			<input formControlName="displayName" type="text" placeholder="New Nametag"/>
-			<br/>
-			<input formControlName="street" type="text" placeholder="Address"/>
-			<br/>
-			<input formControlName="city" type="text" placeholder="City"/>
-			<br/>
-			<input formControlName="state" type="text" placeholder="State"/>
-			<br/>
-			<input formControlName="zipCode" type="text" placeholder="Zip Code"/>
-			
-			
-			<div class="btn__container">
-				<button type="submit" class="btn btn-primary">Sign up</button>
-			</div>
-		</div>
-		</form>
-	</div>
+    <div class = "strip__container">
+        <div class="skew__container">
+            <div class="strip__box1">
+            </div>
+            <div class="strip__box2">
+            </div>
+            <div class="strip__box3">
+            </div>
+            <div class="strip__left">
+            </div>
+            <div class="strip__topright">
+            </div>
+            <div class="strip__right">
+            </div>
+            <div class="strip__small">
+            </div>
+        </div>
+    </div>
+    <div class="signup__form">  
+        <form [formGroup]="registerFromGroup" (ngSubmit)="onSubmit()">
+            <div class = "signup__box">
+            <h1 >Sign Up</h1>
+            <input formControlName="firstName" type="text" placeholder="First Name"/>
+            <br/>
+            <input formControlName="lastName" type="text" placeholder="Last Name"/>
+            <br/>
+            <input formControlName="email" type="text" placeholder="Email Address"/>
+            <br/>
+            <input formControlName="username" type="text" placeholder="New Username"/>
+            <br/>
+            <input formControlName="password" id="password" name="password" type="password" placeholder="New Password"/>
+            <br/>
+            <input formControlName="displayName" type="text" placeholder="New Nametag"/>
+            <br/>
+            <input formControlName="street" type="text" placeholder="Address"/>
+            <br/>
+            <input formControlName="city" type="text" placeholder="City"/>
+            <br/>
+            <input formControlName="state" type="text" placeholder="State"/>
+            <br/>
+            <input formControlName="zipCode" type="text" placeholder="Zip Code"/>
+            
+            
+            <div class="btn__container">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+        </form>
+        <div class = iconcontainer>
+            <div class = houseicon>
+                <a routerLink="/about"><i class="bi bi-house"></i></a>
+            </div>
+        </div>
+    </div>
 </div>
-
-

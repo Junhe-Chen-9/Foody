@@ -1,5 +1,3 @@
-
-
 .login__container{
     display: flex;
     justify-content: center;
@@ -17,11 +15,12 @@
     box-shadow: 0 15px 35px 0 var(--color-shadow), 0 5px 15px 0 var(--color-shadow2);
     box-sizing: border-box;
     flex-shrink: 0;
-    width: 500px;
+    width: 80%;
     color: var(--color-head);
     word-wrap: break-word;
     background-color: var(--color-white);
     z-index: 3;
+    height: 300px;
 }
 
 .login__form input{
@@ -166,15 +165,85 @@
     position: absolute;
 }
 
+.icon__container{
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 0px;
+}
+
+.house__icon{
+    font-size: 25px;
+    color: var(--color-black);
+}
+
+
+
 /* MEDIA QUERIES */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+/* Extra small devices (phones, 280px and below) */
+@media only screen and (max-width: 280px){
     .form__container {
         overflow: hidden; 
         padding: 20px;
         width: 90%;
         text-align: center;
         min-width: 280px;
+        height: 340px;
+    }
+    .login__box{
+        width: 100%;
+    }
+    .login__form h1{      
+        font-size: 20px;
+    }
+    .login__form input{
+        margin-left: 0;
+        padding-left: 5px;
+        width: 100%;     
+    }
+    .btn{
+        margin-left: 0;
+        width: 100%;   
+    }
+  }
+
+/* Extra small devices (phones, 280px and 360px) */
+@media only screen and (min-width: 280px) and (max-width: 360px) {
+    .form__container {
+        overflow: hidden; 
+        padding: 20px;
+        width: 90%;
+        text-align: center;
+        min-width: 280px;
+        height: 350px;
+    }
+    .login__box{
+        width: 100%;
+    }
+    .login__form h1{      
+        font-size: 20px;
+    }
+    .login__form input{
+        margin-left: 0;
+        padding-left: 5px;
+        width: 100%;     
+    }
+    .btn{
+        margin-left: 0;
+        width: 100%;   
+    }
+  }
+
+/* Extra small devices */
+@media only screen and (min-width: 361px) and (max-width: 599px) {
+    .form__container {
+        overflow: hidden; 
+        padding: 20px;
+        width: 70%;
+        text-align: center;
+        min-width: 280px;
+        height: 330px;
     }
     .login__box{
         width: 100%;
@@ -196,13 +265,21 @@
 
   /* Small devices */
   @media only screen and (min-width: 600px) and (max-width: 653px){
-    .login__form {
+    .form__container {
         overflow: auto; 
         padding: 20px;
-        width: 90%;
+        width: 60%;
         text-align: center;
         min-width: 280px;
-        height: 300px;
+        height: 335px;
+    }
+    .login__form h1{      
+        font-size: 20px;
+    }
+    .login__form input{
+        margin-left: 0;
+        padding-left: 5px;
+        width: 100%;     
     }
   }
   
@@ -211,11 +288,19 @@
     .form__container {
         overflow: auto; 
         padding: 20px;
-        width: 90%;
+        width: 55%;
         text-align: center;
         min-width: 280px;
-        height: 300px;
+        height: 335px;
 
+    }
+    .login__form h1{      
+        font-size: 20px;
+    }
+    .login__form input{
+        margin-left: 0;
+        padding-left: 5px;
+        width: 100%;     
     }
   }
   
@@ -224,12 +309,13 @@
     .form__container{
         overflow: auto; 
         padding: 20px;
-        width: 90%;
+        width: 50%;
         text-align: center;
-        min-width: 280px;
-        height: 400px;
- 
+        height: 300px;
     } 
+    .login__form h1{      
+        font-size: 20px;
+    }
     .login__form input{
         margin-left: 0;
         padding-left: 5px;
@@ -268,10 +354,17 @@
     .form__container {
         overflow: auto; 
         padding: 20px;
-        width: 90%;
+        width: 50%;
         text-align: center;
-        min-width: 280px;
-        height: 400px;
+        height: 300px;
+    }
+    .login__form h1{      
+        font-size: 20px;
+    }
+    .login__form input{
+        margin-left: 0;
+        padding-left: 5px;
+        width: 100%;     
     }
   }
 
@@ -279,9 +372,9 @@
     .form__container{
         overflow: hidden; 
         padding: 20px;
-        width: 80%;
+        width: 50%;
         text-align: center;
-        min-width: 280px;
+        height: 300px;
 
     }   
     .login__form input{
@@ -317,15 +410,15 @@
     }
   }
 
-  /* Medium-large devices (landscape tablets, 913px and up) */
+  /* Medium-large devices (landscape tablets, 913px to 991px) */
   @media only screen and (min-width: 913px) and (max-width: 991px) {
     .form__container{
         overflow: auto; 
         padding: 20px;
-        width: 90%;
+        width: 50%;
         text-align: center;
         min-width: 280px;
-        height: 400px;
+        height: 300px;
     }
     .login__form h1{      
         font-size: 20px;
@@ -355,16 +448,22 @@
         box-shadow: 0 15px 35px 0 var(--color-shadow), 0 5px 15px 0 var(--color-shadow2);
         box-sizing: border-box;
         flex-shrink: 0;
-        width: 500px;
+        width: 35%;
         color: var(--color-head);
         word-wrap: break-word;
         background-color: var(--color-white);
         z-index: 3;
+        height: 300px;
     }
     .login__box{
         padding-left: 40px;
         padding-right: 40px;
         width: 100%;
+    }
+    .login__form input{
+        margin-left: 0;
+        padding-left: 5px;
+        width: 100%;     
     }
     .strip__container{
         top: 80px;
@@ -420,19 +519,16 @@
     } 
   } 
 
-.bi-house{
-    z-index: 1;
-    position: absolute;
-    top: 20%;
-    left: 30%
-    
-}
 /* MD DEVICES */
 @media screen and (max-width:1024px) {
     
 
  }
  
+ /* SM DEVICES */
+ @media screen and (max-width:600px) {
+    
+ }
  /* SM DEVICES */
  @media screen and (max-width:600px) {
     
