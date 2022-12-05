@@ -10,11 +10,19 @@ import { AuthService } from 'src/app/service/auth.service';
 })
 export class AccountComponent implements OnInit {
   user:Userprofile;
+  
+  
 
-  constructor(private auth:AuthService,private router:Router) { }
+  constructor(private auth:AuthService,private router:Router) { 
+
+  }
 
   ngOnInit(): void {
     this.user = JSON.parse(sessionStorage.getItem("userDetails")) as Userprofile;
+    
+    
+
+    
   }
   signout(){
     this.auth.logout(sessionStorage.getItem("token"));
@@ -23,5 +31,12 @@ export class AccountComponent implements OnInit {
     
     this.router.navigateByUrl('/login');
   }
+  toggle(){
+    let sidebar = document.querySelector(".sidebar");
+    sidebar.classList.toggle("active");
+
+  }
+  
+  
 
 }

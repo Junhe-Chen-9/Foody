@@ -16,6 +16,8 @@ import { AccountComponent } from './component/account/account.component';
 import { ModalComponent } from './component/modal/modal.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { DashboardComponent } from './component/dashboard/dashboard.component';
+import { VisitHistoryComponent } from './component/visit-history/visit-history.component';
+
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
     AccountComponent,
     ModalComponent,
     DashboardComponent,
+    VisitHistoryComponent,
+
   ],
   imports: [
     BrowserModule,

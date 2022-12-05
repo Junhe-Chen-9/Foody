@@ -9,92 +9,90 @@
     <div class="sidebar">
         <div class="side-nav-logo-content">
             <div class="side-nav-logo">
-                <i class="bi bi-house"></i>
-                <div class="side-nav-logoname">Foody</div>
+                <div class="side-nav-logoname-div" ><span class="side-nav-logo-bold">Foody</span></div>
             </div>
-            <i class="bi bi-list" id="sid-nav-btn"></i>
+            
+            <i class="bi bi-list" id="sid-nav-btn" (click)="toggle()"></i>
         </div>
         <ul class="side-nav-list">
+            
+
             <li>
-                
-                <i class="bi bi-search" id="sid-nav-btn"></i>
+                <i class="bi bi-search" id="sid-nav-btn" (click)="toggle()"></i>
                 <input type="text" placeholder="Search...">
 
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+                <span class="tooltip">Search</span>
                 
             </li>
 
             <li>
-                <a href="#">
-                    <i class="bi bi-grid" ></i>
-                    <span class="links_name">Dashboard</span>
+                <a routerLink="/about" >
+                    <i class="bi bi-house-door"></i>
+                    <span class="links_name">Home</span>
                 </a>
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+
+                <span class="tooltip">Home</span>
+
+                
+            </li>
+
+            <li>
+                <a routerLink="/explore">
+                    <i class="bi bi-grid" ></i>
+                    <span class="links_name">Explore</span>
+                </a>
+
+                <span class="tooltip">Explore</span>
+
                 
             </li>
             
             <li>
-                <a href="#">
+                <a routerLink="/account/dashboard">
                     <i class="bi bi-person" id="sid-nav-btn"></i>
                     <span class="links_name">User</span>
                 </a>
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+                <span class="tooltip">User</span>
                 
             </li>
             <li>
-                <a href="#">
+                <a>
                     <i class="bi bi-chat" id="sid-nav-btn"></i>
                     <span class="links_name">Messages</span>
                 </a>
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+                <span class="tooltip">Messages</span>
                 
             </li>
             <li>
-                <a href="#">
+                <a>
                     <i class="bi bi-heart" id="sid-nav-btn"></i>
                     <span class="links_name">Liked</span>
                 </a>
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+                <span class="tooltip">Liked</span>
                 
             </li>
             <li>
-                <a href="#">
+                <a routerLink="/account/visited">
                     <i class="bi bi-compass" id="sid-nav-btn"></i>
                     <span class="links_name">Visited</span>
                 </a>
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+                <span class="tooltip">Visited</span>
                 
             </li>
             <li>
-                <a href="#">
+                <a>
                     <i class="bi bi-file-text" id="sid-nav-btn"></i>
                     <span class="links_name">Rated</span>
                 </a>
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+                <span class="tooltip">Rated</span>
                 
             </li>
             <li>
-                <a href="#">
+                <a>
                     <i class="bi bi-gear" id="sid-nav-btn"></i>
                     <span class="links_name">Setting</span>
                 </a>
-                <!--
-                    <span class="tootip">Dashboard</span>
-                -->
+                <span class="tooltip">Setting</span>
                 
             </li>
         </ul>
@@ -109,17 +107,18 @@
                         
                         <div class="name">
                             
-                        <p>{{ user.firstName }} {{user.lastNameInit}}</p>
+                        <p> {{ user.firstName }} {{user.lastNameInit}}</p>
                         
                         </div>
                         <div class="since">
                         
-                        <p>Foody Member Since: {{ user.memberSince }}</p>
+                        <p> Member Since: {{ user.memberSince }}</p>
                         
                         </div>
                     </div>
-                    <i class="bi bi-box-arrow-left" id="log_out"></i>
+                    
                 </div>
+                <i class="bi bi-box-arrow-left" id="log_out" (click)="signout()"></i>
             </div>
         </div>
 
