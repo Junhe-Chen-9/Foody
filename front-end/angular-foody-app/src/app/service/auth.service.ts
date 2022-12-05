@@ -42,7 +42,7 @@ export class AuthService {password
                 sessionStorage.setItem('userDetails',JSON.stringify(user)); // store the user details
                 this.authenticated.next(true);
                 
-                router.navigateByUrl('/about');
+                router.navigateByUrl('/about/dashboard');
                 
             }
             },

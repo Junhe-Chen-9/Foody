@@ -1,6 +1,135 @@
-<div>
-    <p>hi, {{ user.firstName }}</p>
-    <p>{{ user.state }}</p>
-    <p>it works</p>
-    <button type="button" (click)="signout()" >Sign out</button>
+<div class="container account__container">
+    <!--
+        <p>hi, {{ user.firstName }}</p>
+        <p>{{ user.state }}</p>
+        <p>it works</p>
+        <button type="button" (click)="signout()" >Sign out</button>
+    -->
+
+    <div class="sidebar">
+        <div class="side-nav-logo-content">
+            <div class="side-nav-logo">
+                <i class="bi bi-house"></i>
+                <div class="side-nav-logoname">Foody</div>
+            </div>
+            <i class="bi bi-list" id="sid-nav-btn"></i>
+        </div>
+        <ul class="side-nav-list">
+            <li>
+                
+                <i class="bi bi-search" id="sid-nav-btn"></i>
+                <input type="text" placeholder="Search...">
+
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="bi bi-grid" ></i>
+                    <span class="links_name">Dashboard</span>
+                </a>
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+            
+            <li>
+                <a href="#">
+                    <i class="bi bi-person" id="sid-nav-btn"></i>
+                    <span class="links_name">User</span>
+                </a>
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-chat" id="sid-nav-btn"></i>
+                    <span class="links_name">Messages</span>
+                </a>
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-heart" id="sid-nav-btn"></i>
+                    <span class="links_name">Liked</span>
+                </a>
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-compass" id="sid-nav-btn"></i>
+                    <span class="links_name">Visited</span>
+                </a>
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-file-text" id="sid-nav-btn"></i>
+                    <span class="links_name">Rated</span>
+                </a>
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+            <li>
+                <a href="#">
+                    <i class="bi bi-gear" id="sid-nav-btn"></i>
+                    <span class="links_name">Setting</span>
+                </a>
+                <!--
+                    <span class="tootip">Dashboard</span>
+                -->
+                
+            </li>
+        </ul>
+        
+        <div class="profile_content">
+            <div class="profile">
+                <div class="profile_details">
+    
+                    <img src="../../../assets/me.jpg" alt="" style="background-color: white">
+
+                    <div class="name_since">
+                        
+                        <div class="name">
+                            
+                        <p>{{ user.firstName }} {{user.lastNameInit}}</p>
+                        
+                        </div>
+                        <div class="since">
+                        
+                        <p>Foody Member Since: {{ user.memberSince }}</p>
+                        
+                        </div>
+                    </div>
+                    <i class="bi bi-box-arrow-left" id="log_out"></i>
+                </div>
+            </div>
+        </div>
+
+        
+        
+    </div>
+
+    <div class="display_content">
+        <router-outlet></router-outlet>
+    </div>
+
+    
 </div>

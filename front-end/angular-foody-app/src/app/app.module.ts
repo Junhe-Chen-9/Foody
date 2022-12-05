@@ -15,6 +15,7 @@ import { SignupComponent } from './component/signup/signup.component';
 import { AccountComponent } from './component/account/account.component';
 import { ModalComponent } from './component/modal/modal.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { DashboardComponent } from './component/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -27,10 +28,7 @@ import {MatDialogModule} from '@angular/material/dialog';
     SignupComponent,
     AccountComponent,
     ModalComponent,
-    
-   
-    
-    
+    DashboardComponent,
   ],
   imports: [
     BrowserModule,

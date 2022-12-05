@@ -24,7 +24,7 @@
                 </a>
             </nav>
             <nav class="aboutheader__ctaNav">
-                <a *ngIf="signin" routerLink="/account" class="aboutheader__btn">Dashboard &#11088;</a>
+                <a *ngIf="signin" routerLink="/account/dashboard" class="aboutheader__btn">Dashboard &#11088;</a>
                 <a *ngIf="!signin" routerLink="/login" class="aboutheader__btn">Sign in &#11088;</a>
             </nav>
             
@@ -70,7 +70,7 @@
         </ul>
 
         <div class="mobileaboutnavbtn__container">
-            <a *ngIf="signin" routerLink="/account" class="aboutheader__btn mobile__nav__header-btn">Dashboard</a>
+            <a *ngIf="signin" routerLink="/account/dashboard" class="aboutheader__btn mobile__nav__header-btn">Dashboard</a>
             <a *ngIf="!signin" routerLink="/login" class="aboutheader__btn mobile__nav__header-btn">Sign in</a>
         </div>
        
