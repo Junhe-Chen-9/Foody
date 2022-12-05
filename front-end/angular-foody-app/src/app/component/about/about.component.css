@@ -137,7 +137,7 @@ header{
 
 .custom-shape-divider-bottom-1668032691 {
     position: relative;
-    bottom: 0;
+    bottom: -17px;
     left: 0;
     width: 100%;
     overflow: hidden;
@@ -149,7 +149,7 @@ header{
     position: relative;
     display: block;
     width: calc(300% + 1.3px);
-    height: 294px;
+    height: 317px;
 }
 
 .custom-shape-divider-bottom-1668032691 .shape-fill {

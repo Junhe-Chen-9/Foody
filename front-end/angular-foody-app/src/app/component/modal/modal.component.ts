@@ -6,11 +6,11 @@ import {MatDialog, MatDialogModule, MatDialogRef} from '@angular/material/dialog
   styleUrls: ['./modal.component.css']
 })
 export class ModalComponent {
-  constructor(public dialogRef: MatDialogRef<ModalComponent>){
+  constructor(){
 
   }
   closeDialog() {
-    this.dialogRef.close('Pizza!');
+    
   }
   
   

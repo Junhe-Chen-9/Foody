@@ -23,7 +23,7 @@ const routes: Routes = [
   // routing inside account page
   { path: 'account', component: AccountComponent, children:[
     { path: 'dashboard', component:  DashboardComponent },
-    { path: 'visited', component: VisitHistoryComponent },
+    { path: 'visited',component: VisitHistoryComponent },
   ] },
   // by defualt we should be route to homepage
   {path:'account',component:AccountComponent},
