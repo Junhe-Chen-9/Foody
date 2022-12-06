@@ -26,7 +26,6 @@ const routes: Routes = [
     { path: 'visited',component: VisitHistoryComponent },
   ] },
   // by defualt we should be route to homepage
-  {path:'account',component:AccountComponent},
   {path: '**', component: AboutComponent}
 ];
 
