@@ -19,13 +19,13 @@ export class SignupComponent implements OnInit {
     this.registerFromGroup = this.formBuilder.group({
       firstName: new FormControl('', [Validators.required, Validators.minLength(2)]),
       lastName: new FormControl('', [Validators.required, Validators.minLength(2)]),
-      email: new FormControl('',
-       // regular expression here to get right input
-       // language accepted per class 310 is letter and digit and @ symbol and any letter and digits and . and 2-5 letter for domain extension
-       [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$')]
-      ),
-      username: new FormControl(''),
-      password: new FormControl(''),
+      email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$')]),
+      //  // regular expression here to get right input
+      //  // language accepted per class 310 is letter and digit and @ symbol and any letter and digits and . and 2-5 letter for domain extension
+      //  [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$')]
+      // ),
+      username: new FormControl('', [Validators.required]),
+      password: new FormControl('', [Validators.required, Validators.minLength(5)]),
       displayName: new FormControl(''),
       street: new FormControl(''),
       city: new FormControl(''),
@@ -38,17 +38,30 @@ export class SignupComponent implements OnInit {
   get firstName(){
     return this.registerFromGroup.get('appuser.firstName');
   }
+  get lastName(){
+    return this.registerFromGroup.get('appuser.lastName');
+  }
+
+  get email() {
+    return this.registerFromGroup.get('email');
+  }
+
+  get password() {
+    return this.registerFromGroup.get('password');
+  }
 
   onSubmit(){
     
     // making sure the everything is valid
-    /*
-    if(this.registerFromGroup.invalid){
+    
+    // if(this.registerFromGroup.invalid){
+    
       // not not 
-      this.registerFromGroup.markAllAsTouched();
-      return;
-    }
-    */
+    //   e.preventDefault();
+    //   this.registerFromGroup.markAllAsTouched();
+    //   return;
+    // }
+    
 
     let registerInstructions = new RegisterInstructions();
     //registerInstructions.firstName = this.registerFromGroup.get('appuser').value;
