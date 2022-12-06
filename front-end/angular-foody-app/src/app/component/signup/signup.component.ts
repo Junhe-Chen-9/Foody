@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { RegisterInstructions } from 'src/app/common/register-instructions';
 import { RegisterService } from 'src/app/service/register.service';
-
+import { MatDialog } from '@angular/material/dialog';
+import { ModalComponent } from '../modal/modal.component';
 
 @Component({
   selector: 'app-signup',
@@ -12,7 +13,7 @@ import { RegisterService } from 'src/app/service/register.service';
 export class SignupComponent implements OnInit {
   registerFromGroup: FormGroup;
   
-  constructor(private formBuilder: FormBuilder,private registerService:RegisterService) { }
+  constructor(private formBuilder: FormBuilder,private registerService:RegisterService,private dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.registerFromGroup = this.formBuilder.group({
@@ -55,6 +56,9 @@ export class SignupComponent implements OnInit {
     registerInstructions.lastNameInit = registerInstructions.lastName.charAt(0).toUpperCase().concat(".");
     registerInstructions.memberSince = new Date();
     this.registerService.register(registerInstructions);
-    
+    this.openDialog();
+  }
+  openDialog() {
+    this.dialog.open(ModalComponent);
   }
 }

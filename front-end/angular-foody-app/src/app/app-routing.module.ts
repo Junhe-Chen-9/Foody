@@ -7,6 +7,7 @@ import { DashboardComponent } from './component/dashboard/dashboard.component';
 import { HomepageComponent } from './component/homepage/homepage.component';
 import { LoginComponent } from './component/login/login.component';
 import { SignupComponent } from './component/signup/signup.component';
+import { VisitHistoryComponent } from './component/visit-history/visit-history.component';
 import { AuthenticationGuard } from './guard/authentication.guard';
 
 const routes: Routes = [
@@ -22,6 +23,7 @@ const routes: Routes = [
   // routing inside account page
   { path: 'account', component: AccountComponent, children:[
     { path: 'dashboard', component:  DashboardComponent },
+    { path: 'visited',component: VisitHistoryComponent },
   ] },
   // by defualt we should be route to homepage
   {path:'account',component:AccountComponent},

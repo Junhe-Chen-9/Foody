@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
-import { MatDialog } from '@angular/material';
 import { Business } from 'src/app/common/business';
 import { SearchServiceService } from 'src/app/service/search-service.service';
 import { ModalComponent } from '../modal/modal.component';
@@ -16,7 +15,7 @@ export class HomepageComponent implements OnInit {
 
   businesses:Business[];
 
-  constructor(private formBuilder:FormBuilder, private searchService:SearchServiceService,public dialog: MatDialog) { }
+  constructor(private formBuilder:FormBuilder, private searchService:SearchServiceService) { }
 
   ngOnInit(): void {
     this.searchFormGroup = this.formBuilder.group({
@@ -40,13 +39,7 @@ export class HomepageComponent implements OnInit {
     )
   }
 
-  openDialog() {
-    const dialogRef = this.dialog.open(ModalComponent);
 
-    dialogRef.afterClosed().subscribe(result => {
-      console.log(`Dialog result: ${result}`);
-    });
-  }
   
 
 

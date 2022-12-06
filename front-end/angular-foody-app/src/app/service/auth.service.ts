@@ -55,6 +55,7 @@ export class AuthService {password
     }
 
     logout(sessionId:String){
+        sessionStorage.clear();
         this.http.post<any>('https://themillenniumfalcon.junhechen.com/api/v1/logout',sessionId).subscribe(
             (res) => {
                 if(res) {
