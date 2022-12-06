@@ -74,6 +74,20 @@
     font-family: "Georgia", Times, serif;
 }
 
+
+.login__box{
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+}
+
+
+button[disabled]{
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
 .strip__container{
     top: 80px;
     transform: skewY(-10deg);

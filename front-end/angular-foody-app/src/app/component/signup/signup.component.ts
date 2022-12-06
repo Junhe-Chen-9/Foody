@@ -19,18 +19,18 @@ export class SignupComponent implements OnInit {
     this.registerFromGroup = this.formBuilder.group({
       firstName: new FormControl('', [Validators.required, Validators.minLength(2)]),
       lastName: new FormControl('', [Validators.required, Validators.minLength(2)]),
-      email: new FormControl('', [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$')]),
+      email: new FormControl('', [Validators.required, Validators.email]),
       //  // regular expression here to get right input
       //  // language accepted per class 310 is letter and digit and @ symbol and any letter and digits and . and 2-5 letter for domain extension
       //  [Validators.required, Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,5}$')]
       // ),
       username: new FormControl('', [Validators.required]),
       password: new FormControl('', [Validators.required, Validators.minLength(5)]),
-      displayName: new FormControl(''),
-      street: new FormControl(''),
-      city: new FormControl(''),
-      state: new FormControl(''),
-      zipCode: new FormControl('')
+      displayName: new FormControl('', [Validators.required, Validators.minLength(2)]),
+      street: new FormControl('', [Validators.required, Validators.minLength(2)]),
+      city: new FormControl('', [Validators.required, Validators.minLength(2)]),
+      state: new FormControl('', [Validators.required, Validators.minLength(2)]),
+      zipCode: new FormControl('',[Validators.required, Validators.minLength(5)]),
 
     });
   }
@@ -48,6 +48,21 @@ export class SignupComponent implements OnInit {
 
   get password() {
     return this.registerFromGroup.get('password');
+  }
+   get displayName() {
+    return this.registerFromGroup.get('displayName');
+  }
+   get street() {
+    return this.registerFromGroup.get('street');
+  }
+   get city() {
+    return this.registerFromGroup.get('city');
+  }
+   get state() {
+    return this.registerFromGroup.get('state');
+  }
+   get zipCode() {
+    return this.registerFromGroup.get('zipCode');
   }
 
   onSubmit(){

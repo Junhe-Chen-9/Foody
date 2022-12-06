@@ -38,14 +38,24 @@
                     password</span>
                 <br />
                 <input formControlName="displayName" type="text" placeholder="New Nametag" />
+                <span style="color:red;" *ngIf="displayName && displayName.invalid && displayName.touched"> Please enter a valid
+                    entry</span>
                 <br />
                 <input formControlName="street" type="text" placeholder="Address" />
+                <span style="color:red;" *ngIf="street && street.invalid && street.touched"> Please enter a valid
+                    entry</span>
                 <br />
                 <input formControlName="city" type="text" placeholder="City" />
+                <span style="color:red;" *ngIf="city && city.invalid && city.touched"> Please enter a valid
+                    entry</span>
                 <br />
                 <input formControlName="state" type="text" placeholder="State" />
+                <span style="color:red;" *ngIf="state && state.invalid && state.touched"> Please enter a valid
+                    entry</span>
                 <br />
                 <input formControlName="zipCode" type="text" placeholder="Zip Code" />
+                <span style="color:red;" *ngIf="zipCode && zipCode.invalid && zipCode.touched"> Please enter a valid
+                    entry</span>
 
 
                 <div class="btn__container">
