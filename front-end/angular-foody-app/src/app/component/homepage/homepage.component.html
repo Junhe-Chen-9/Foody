@@ -51,15 +51,13 @@
 <section class = "output">
     <div class="row container display__container" *ngFor="let tempBusiness of businesses">
         <div class="content card business__card">
+            <h3>How's this?</h3><br>
             <h1>{{ tempBusiness.name }}</h1>
-            <h2>Rating: {{tempBusiness.rating}}</h2>
-            <h2>{{ tempBusiness.price}}</h2>
-            <h2>Location </h2>
+            <p>Rating: {{tempBusiness.rating}}</p>
+            <p>{{ tempBusiness.price}}</p>
+            <p>Location: </p>
             <p *ngFor="let tempDisplay_location of tempBusiness.location.display_address">{{tempDisplay_location}}</p>
-        </div>
-
-
-       
+        </div>    
             <div class="pic-container card img__card">
                 <img [src]="tempBusiness.image_url" alt="">
             </div>

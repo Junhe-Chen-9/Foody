@@ -126,7 +126,7 @@ section{
 
 .about .row .content p{
     font-size: 1.5rem;
-    color: var(--color-gray);
+    color: var(--color-inputbox);
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
@@ -180,6 +180,7 @@ section{
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
     height: 100%;
     object-fit: cover;
+    max-height: 100vh;
 }
 
 .output .row .pic-container h3{
@@ -203,9 +204,14 @@ section{
     color: var(--color-btn);
 }
 
+.output .row .content h1{
+    font-size: 2.5rem;
+    color: var(--color-inputbox);
+}
+
 .output .row .content p{
     font-size: 1.5rem;
-    color: var(--color-gray);
+    color: var(--color-inputbox);
     padding: .5rem 0;
     padding-top: 1rem;
     line-height: 1.5;
