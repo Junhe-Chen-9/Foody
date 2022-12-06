@@ -99,7 +99,7 @@ section{
     width: 100%;
     border: 1.5rem solid var(--color-white);
     border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3); 
     height: 100%;
     object-fit: cover;
 }
@@ -177,7 +177,7 @@ section{
     width: 100%;
     border: 1.5rem solid var(--color-white);
     border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.3);
     height: 100%;
     object-fit: cover;
     max-height: 100vh;
