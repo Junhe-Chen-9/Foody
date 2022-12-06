@@ -1,55 +1,67 @@
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <div class="container main__container">
 
-    <div class="container form__container">
+<section class = "home">
+    <div class = "content">
+        <h3>Foody</h3>
+        <span>Let me pick the food so you don't have to!</span>
+    </div>
+</section>
 
-        <div class="container info__container">
-            <h1>Foody</h1>
-            <h2>Let me pick the food so you don't have to !</h2>
+<section class = "about">
+    <h1 class = "heading"><span> Search </span> Now </h1>   
+    <div class = "row">
+        <div class = "pic-container">
+            <img src="..\..\..\assets\—Pngtree—healthy food_3776802.png">
+            <h3>Search Around</h3>
         </div>
-
-        <div class="container userinput__container">
-            <form [formGroup]="searchFormGroup" (ngSubmit)="search()">
-                <div class="area form__area" formGroupName="searchInfo">
-                    <div class="label form__label">Search around</div>
-                    
-                    <div class="input input__space">
-                        
-                        <input formControlName="address" type="text">
-                    </div>
-
-                    <div class="label form__label">Radius</div>
-
-                    <div class="input input__space">
-                        <select formControlName="radius" type="text">
-                            <option value="1609">1 mile</option>
-                            <option value="8046">5 miles</option>
-                            <option value="16000">10 miles</option>
-                            <option value="40000">25 miles</option>
-                        </select>
-                    </div>
-                </div>
-                <!-- submit button-->
-                <div class="container button__container">
-                    <button type="subtmit" class="btn btn__submit">Search</button>
-                </div>
-            </form>
-            
-        </div>
+        <div class = "content">
+            <h3>Hungry?</h3>
+                <div class="container userinput__container">
+                    <form [formGroup]="searchFormGroup" (ngSubmit)="search()">
+                        <div class="area form__area" formGroupName="searchInfo">
+                            <p>City</p>
+                            
+                            <div class="input input__space">                               
+                                <input formControlName="address" type="text" placeholder = "location">
+                            </div>
         
+                            <p>Radius</p>
+        
+                            <div class="input input__space">
+                                <select formControlName="radius" type="text" class = "dropdown">
+                                    <option value="1609">1 mile</option>
+                                    <option value="8046">5 miles</option>
+                                    <option value="16000">10 miles</option>
+                                    <option value="40000">25 miles</option>
+                                </select>
+                            </div>
+                        </div>
+                        <!-- submit button-->
+                        <div class="container button__container">
+                            <button type="submit" class="btn btn__submit">Search</button>
+                        </div>
+                    </form>
+                    
+                </div>
+        </div>
     </div>
+</section>
 
-    <div class="container display__container" *ngFor="let tempBusiness of businesses">
-        <div class="card business__card">
+<section class = "output">
+    <div class="row container display__container" *ngFor="let tempBusiness of businesses">
+        <div class="content card business__card">
+            <h3>How's this?</h3><br>
             <h1>{{ tempBusiness.name }}</h1>
-            <h2>Rating: {{tempBusiness.rating}}</h2>
-            <h2>{{ tempBusiness.price}}</h2>
-            <h2>Location </h2>
+            <p>Rating: {{tempBusiness.rating}}</p>
+            <p>{{ tempBusiness.price}}</p>
+            <p>Location: </p>
             <p *ngFor="let tempDisplay_location of tempBusiness.location.display_address">{{tempDisplay_location}}</p>
-        </div>
+        </div>    
+            <div class="pic-container card img__card">
+                <img [src]="tempBusiness.image_url" alt="">
+            </div>
 
-        <div class="card img__card">
-            <img [src]="tempBusiness.image_url" alt="">
-        </div>
     </div>
-
+</section>
 </div>
