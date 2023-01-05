@@ -9,3 +9,4 @@ Foody is a full stack application to help people choose restaurants.
 ### License
 
 Foody is [Apache License 2.0](./LICENSE).
+api/pin?username=anuraghazra&repo=github-readme-stats
